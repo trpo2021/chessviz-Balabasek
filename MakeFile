@@ -1,0 +1,2 @@
+chess:
+	gcc -Wall -Werror chess.c -o chess
