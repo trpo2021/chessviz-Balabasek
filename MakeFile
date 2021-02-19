@@ -1,2 +1,2 @@
-chess:
+chess: chess.c
 	gcc -Wall -Werror chess.c -o chess
