@@ -46,3 +46,16 @@ void move_king(figure desk[8][8], coordinate start, coordinate end) {
     printf("	uncorrect moveKing.\n\n\n");
   }
 }
+
+void move_knight(figure desk[8][8], coordinate start, coordinate end) {
+  int step = end.x - start.x;
+  int step2 = end.y - start.y;
+  if ((((abs(step2) == 1) && (abs(step) == 2)) ||
+       ((abs(step2) == 2) && (abs(step) == 1))) &&
+      (desk[end.x][end.y].name == ' ')) {
+    swap(desk, start, end);
+    printf(" Konb \n");
+  } else {
+    printf("	uncorrect moveKnight.\n\n\n");
+  }
+}
