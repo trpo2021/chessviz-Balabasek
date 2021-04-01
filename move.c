@@ -33,3 +33,16 @@ void move_pown(figure desk[8][8], coordinate start, coordinate end) {
     printf("	uncorrect movePown.\n\n\n");
   }
 }
+void move_king(figure desk[8][8], coordinate start, coordinate end) {
+  int step = end.x - start.x;
+  int step2 = end.y - start.y;
+  if ((desk[end.x][end.y].name == ' ') &&
+      (((abs(step) == 1) && (abs(step2) == 0)) ||
+       ((abs(step2) == 1) && (abs(step) == 0)) ||
+       ((abs(step) == 1) && (abs(step2) == 1)))) {
+    swap(desk, start, end);
+    printf(" korol \n");
+  } else {
+    printf("	uncorrect moveKing.\n\n\n");
+  }
+}
