@@ -1,3 +1,4 @@
 *.o
-*.c.swp
-*.c.save
+*.swp
+*.save
+chess
