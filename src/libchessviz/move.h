@@ -1,16 +1,16 @@
 #pragma once
 
-struct coord
+typedef struct coord
 {
 	int x;
 	int y;
-}typedef coordinate;
+}coordinate;
 
-struct figure
+typedef struct figure
 {
 	char name;
 	coordinate coord;
-}typedef figure;
+}figure;
 
 void move_pown(figure  desk[8][8], coordinate , coordinate);
 void move_king(figure  desk[8][8], coordinate , coordinate);

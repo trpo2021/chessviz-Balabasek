@@ -1,4 +1,4 @@
-#include "move.h"
+#include "libchessviz/move.h"
 #include <stdio.h>
 #include <string.h>
 
