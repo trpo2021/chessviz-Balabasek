@@ -1,4 +1,4 @@
+*.a
+*.d
 *.o
-*.swp
-*.save
-chess
+bin/geometry
