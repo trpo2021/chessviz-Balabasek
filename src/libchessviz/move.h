@@ -1,11 +1,11 @@
 #pragma once
 
-typedef struct coord {
+typedef struct {
     int x;
     int y;
 } coordinate;
 
-typedef struct figure {
+typedef struct {
     char name;
     coordinate coord;
 } figure;

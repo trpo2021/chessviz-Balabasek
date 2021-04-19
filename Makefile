@@ -1,7 +1,7 @@
 APP_NAME = chessviz
 LIB_NAME = libchessviz
 
-CFLAGS = -Wall -Wextra -Werror -O0 -g3
+CFLAGS = -std=c11 -Wall -Werror 
 CPPFLAGS = -I src -MP -MMD
 
 
